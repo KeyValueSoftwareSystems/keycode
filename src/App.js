@@ -70,7 +70,7 @@ function App() {
               <div class="word">24 hours</div>
             </div>
           </h1>
-          <div className="RowGroup">
+          <div className="timer">
             {FormattedTimeComponent({ time: days, label: "Days" })}
             {FormattedTimeComponent({ time: hours, label: "Hours" })}
             {FormattedTimeComponent({ time: minutes, label: "Minutes" })}
