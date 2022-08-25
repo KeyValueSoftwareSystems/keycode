@@ -434,21 +434,5 @@ h1 span {
   }
 
 }
-.keycode {
-  display: inline-block !important;
-  animation: grow 8s linear infinite;
-  font-family: 'Poppins', sans-serif;
-}
-@keyframes grow {
-  0% {
-    font-size: 40px;
-  }
-  50% {
-    font-size: 60px;
-  }
-  100% {
-    font-size: 40px;
-  }
-}
 
 

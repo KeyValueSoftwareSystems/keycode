@@ -55,15 +55,12 @@ function App() {
     setInterval(() => {
       if (activeWord === -1) {
         words[words.length - 1].classList.remove("active-word");
-        words[words.length - 1].classList.remove("keycode");
       } else {
         words[activeWord].classList.remove("active-word");
-        words[words.length - 1].classList.remove("keycode");
       }
       activeWord += 1;
       words[activeWord].classList.add("active-word");
       if (activeWord === words.length - 1) {
-        words[words.length - 1].classList.add("keycode");
         activeWord = -1;
       }
     }, 4000);
@@ -99,7 +96,6 @@ function App() {
           <div class="word">Detonating Ideas!</div>
           <div class="word">Choosing 'Code' words!</div>
           <div class="word">A battle set to fight!</div>
-          <div class="word">KeyCode 2022</div>
         </h1>
         <div className="timer">
           {FormattedTimeComponent({ time: days, label: "Days" })}
