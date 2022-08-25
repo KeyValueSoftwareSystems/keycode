@@ -19,11 +19,18 @@
   }
 } */
 
+.kv-logo{
+  padding-top: 50px;
+}
+
 .TimeLabel {
   justify-content: center;
   align-items: center;
-  margin-top: 50%;
   width: 4cm;
+  border-radius: 10px;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 50px;
 }
 @media (max-width: 650px){
   .TimeLabel{
@@ -32,9 +39,9 @@
 }
 
 .TimeLabel-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 30px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
 }
 @media (max-width: 650px){
   .TimeLabel-text{
@@ -43,8 +50,8 @@
 }
 
 .time-text {
-  font-weight: 700;
-  font-size: 50px;
+  font-weight: 800;
+  font-size: 70px;
 }
 @media (max-width: 650px){
   .time-text{
@@ -162,7 +169,7 @@ h1 span {
   font-weight: 900;
   overflow: hidden;
   position: absolute;
-  animation: openclose 10s ease-in-out infinite;
+  animation: openclose 20s ease-in-out infinite;
   align-items: center;
   justify-content: center;
   left: 50%;
@@ -174,70 +181,140 @@ h1 span {
   align-items: center;
 }
 
+@keyframes textAnimation {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+#animated-word {
+
+}
+
+#animated-word .word{
+ display: none;
+ text-align: center;
+ overflow: hidden;
+}
+
+
+.active-word {
+  display: inline-block !important;
+  animation: textAnimation 4s infinite;
+  font-family: 'Poppins', sans-serif;
+}
 
 @keyframes openclose {
   0% {
-    top: 0.2rem;
+    top: 0;
     width: 0;
   }
   5% {
+    top: -100%;
     width: 0;
+  }
+  10% {
+    top: -100%;
+    width: 100%;
   }
   15% {
-    width: 500px;
+    top: -100%;
+    width: 0;
+  }
+  20% {
+    top: -100%;
+    width: 0;
+  }
+  25% {
+    top: -200%;
+    width: 0;
   }
   30% {
-    top: 0.2rem;
-    width: 500px;
-  }
-  33% {
-    top: 0.2rem;
-    width: 0;
+    top: -200%;
+    width: 100%;
   }
   35% {
-    top: 0.2rem;
+    top: -200%;
     width: 0;
   }
-  38% {
-    top: -4.5rem;
-    
-  }
-  48% {
-    top: -4.5rem;
-    width: 500px;
-  }
-  62% {
-    top: -4.5rem;
-    width: 500px;
-  }
-  66% {
-    top: -4.5rem;
+  40% {
+    top: -200%;
     width: 0;
-    text-indent: 0;
   }
-  71% {
-    top: -9rem;
+  45% {
+    top: -300%;
     width: 0;
-    text-indent: 5px;
   }
-  86% {
-    top: -9rem;
+  50% {
+    top: -300%;
+    width: 100%;
+  }
+  55% {
+    top: -300%;
+    width: 0;
+  }
+  60% {
+    top: -300%;
+    width: 0;
+  }
+  65% {
+    top: -400%;
+    width: 0;
+  }
+  70% {
+    top: -400%;
+    width: 100%;
+  }
+  75% {
+    top: -400%;
+    width: 0;
+  }
+  80% {
+    top: -400%;
+    width: 0;
+  }
+  85% {
+    top: -400%;
+    width: 0;
+  }
+  90% {
+    top: -500%;
+    width: 100%;
+  }
+  93% {
+    top: -500%;
+    width: 0;
+  }
+  96% {
+    top: -500%;
+    width: 0;
+  }
+  100% {
+    top: -500%;
+    width: 0;
+  }
+  /* 86% {
+    top: -13.5rem;
     width: 285px;
   }
   95% {
-    top: -9rem;
+    top: -13.5rem;
     width: 285px;
   }
   98% {
-    top: -9rem;
+    top: -13.5rem;
     width: 0;
-    /* text-indent: 5px; */
   }
   100% {
     top: 0;
     width: 0;
-    /* text-indent: 0; */
-  }
+  } */
 }
 .circles{
   position: absolute;
