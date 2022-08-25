@@ -29,6 +29,8 @@
   width: 4cm;
   border-radius: 10px;
   padding: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   background-color: rgba(255, 255, 255, 0.2);
   margin-top: 50px;
 }
@@ -194,7 +196,7 @@ h1 span {
 }
 
 #animated-word {
-
+  height: 100px;
 }
 
 #animated-word .word{
@@ -432,4 +434,21 @@ h1 span {
   }
 
 }
+.keycode {
+  display: inline-block !important;
+  animation: grow 8s linear infinite;
+  font-family: 'Poppins', sans-serif;
+}
+@keyframes grow {
+  0% {
+    font-size: 40px;
+  }
+  50% {
+    font-size: 60px;
+  }
+  100% {
+    font-size: 40px;
+  }
+}
+
 

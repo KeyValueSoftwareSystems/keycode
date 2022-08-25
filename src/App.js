@@ -50,19 +50,22 @@ function App() {
 
   const startAnimation = () => {
     const words = document.getElementsByClassName("word");
-    console.log(words);
     let activeWord = 0;
     words[activeWord].classList.add("active-word");
     setInterval(() => {
-      if(activeWord === -1){
+      if (activeWord === -1) {
         words[words.length - 1].classList.remove("active-word");
+        words[words.length - 1].classList.remove("keycode");
       } else {
         words[activeWord].classList.remove("active-word");
+        words[words.length - 1].classList.remove("keycode");
       }
       activeWord += 1;
-      console.log(activeWord);
       words[activeWord].classList.add("active-word");
-      if(activeWord === words.length - 1) { activeWord = -1};
+      if (activeWord === words.length - 1) {
+        words[words.length - 1].classList.add("keycode");
+        activeWord = -1;
+      }
     }, 4000);
   };
   return (
@@ -83,7 +86,7 @@ function App() {
           </ul>
         </div>
         <div className="kv-logo">
-          <img src={kvLogo} className="kv-logo" alt="kv-logo"/>
+          <img src={kvLogo} className="kv-logo" alt="kv-logo" />
         </div>
         <div className="RowGroup">
           <img src={logo} className="App-logo" alt="logo" />
@@ -92,10 +95,11 @@ function App() {
         <h1 id="animated-word">
           <div class="word">24 hours</div>
           <div class="word">25 teams</div>
-          <div class="word">Neurons on fire</div>
-          <div class="word">Detonating Ideas</div>
-          <div class="word">Choosing 'Code' words</div>
-          <div class="word">A battle set to fight</div>
+          <div class="word">Neurons on fire!</div>
+          <div class="word">Detonating Ideas!</div>
+          <div class="word">Choosing 'Code' words!</div>
+          <div class="word">A battle set to fight!</div>
+          <div class="word">KeyCode 2022</div>
         </h1>
         <div className="timer">
           {FormattedTimeComponent({ time: days, label: "Days" })}
