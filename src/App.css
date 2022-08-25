@@ -8,6 +8,11 @@
   padding-top: 10%;
   margin-bottom: 1%;
 }
+@media (max-width: 650px){
+  .App-logo{
+    margin-bottom: 0;
+  }
+}
 
 .App-text {
   padding-left: 2%;
@@ -36,7 +41,8 @@
 }
 @media (max-width: 650px){
   .TimeLabel{
-    margin-top: 30%;
+    margin-top: 15%;
+    background-color: transparent;
   }
 }
 
@@ -210,6 +216,11 @@ h1 span {
   display: inline-block !important;
   animation: textAnimation 4s infinite;
   font-family: 'Poppins', sans-serif;
+}
+@media (max-width: 650px){
+  .active-word{
+    font-size: 30px;
+  }
 }
 
 @keyframes openclose {
