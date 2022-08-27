@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/keycode/static/css/main.100e8222.css",
-    "main.js": "/keycode/static/js/main.da24de0d.js",
+    "main.css": "/keycode/static/css/main.2b958a00.css",
+    "main.js": "/keycode/static/js/main.88b15090.js",
     "static/js/787.2b405102.chunk.js": "/keycode/static/js/787.2b405102.chunk.js",
     "static/media/keycode_logo.svg": "/keycode/static/media/keycode_logo.a3863aa2be04c0eec10e8386cab35be3.svg",
     "static/media/kvLogo.svg": "/keycode/static/media/kvLogo.23024e5f5b5032efe1f5e4302f5ac6ea.svg",
     "index.html": "/keycode/index.html",
     "static/media/keycode.svg": "/keycode/static/media/keycode.a3dfa623f70067a1e9acba3561bc6a17.svg",
-    "main.100e8222.css.map": "/keycode/static/css/main.100e8222.css.map",
-    "main.da24de0d.js.map": "/keycode/static/js/main.da24de0d.js.map",
+    "main.2b958a00.css.map": "/keycode/static/css/main.2b958a00.css.map",
+    "main.88b15090.js.map": "/keycode/static/js/main.88b15090.js.map",
     "787.2b405102.chunk.js.map": "/keycode/static/js/787.2b405102.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.100e8222.css",
-    "static/js/main.da24de0d.js"
+    "static/css/main.2b958a00.css",
+    "static/js/main.88b15090.js"
   ]
 }
