@@ -18,7 +18,7 @@ function App() {
     </div>
   );
 
-  const countDownDate = new Date("Aug 27, 2022 09:00:00").getTime();
+  const countDownDate = new Date("Aug 28, 2022 09:00:00").getTime();
 
   const [daysLeft, setDaysLeft] = useState(
     countDownDate - new Date().getTime()
@@ -97,6 +97,7 @@ function App() {
           <div class="word">Choosing 'Code' words!</div>
           <div class="word">A battle set to fight!</div>
         </h1>
+        <h2 className="subTitle">Comes To Halt In</h2>
         <div className="timer">
           {FormattedTimeComponent({ time: days, label: "Days" })}
           {FormattedTimeComponent({ time: hours, label: "Hours" })}
